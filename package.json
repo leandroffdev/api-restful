@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "name": "api-restful",
+  "version": "1.0.0",
+  "description": "Criando api restful com nodejs, express, mongo e mongoose",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon backend/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandroffdev/api-restful.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandroffdev/api-restful/issues"
+  },
+  "homepage": "https://github.com/leandroffdev/api-restful#readme"
+}

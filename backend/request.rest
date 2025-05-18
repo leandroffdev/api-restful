@@ -1,0 +1,74 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+{
+  "name": "Festa 002",
+  "description": "confeccionamos sua festa 002",
+  "price": 1500,
+  "ïmage": "https://media.istockphoto.com/id/638528468/photo/judo-training-in-the-sports-hall.jpg?s=612x612&w=0&k=20&c=hUldqplIj7B-0Wfssd2EgwWAYxmnkIRdmIkB9BDR96Q="
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/68289bd2891e65e7a5a87942
+
+###
+PUT http://localhost:3000/api/services/68289bd2891e65e7a5a87942
+Content-Type: application/json
+{
+  "name": "Festa do boi",
+  "description": "festa realizada no parque aristofanes fernandes",
+  "price": 1000,
+  "ïmage": "https://media.istockphoto.com/id/638528468/photo/judo-training-in-the-sports-hall.jpg?s=612x612&w=0&k=20&c=hUldqplIj7B-0Wfssd2EgwWAYxmnkIRdmIkB9BDR96Q="
+}
+
+###
+DELETE http://localhost:3000/api/services/68289bd2891e65e7a5a87942
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+{
+  "title": "Meu evento 3",
+  "author": "Marcos",
+  "description": "Festa 3",
+  "budget": 1500,
+  "ïmage": "https://media.istockphoto.com/id/638528468/photo/judo-training-in-the-sports-hall.jpg?s=612x612&w=0&k=20&c=hUldqplIj7B-0Wfssd2EgwWAYxmnkIRdmIkB9BDR96Q=",
+  "services": [
+    {
+      "name": "Buffet",
+      "description": "serviço de mesa",
+      "price": 1000,
+      "ïmage": "https://media.istockphoto.com/id/638528468/photo/judo-training-in-the-sports-hall.jpg?s=612x612&w=0&k=20&c=hUldqplIj7B-0Wfssd2EgwWAYxmnkIRdmIkB9BDR96Q="
+    }
+  ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/682a25f3c9eb58ea61175f62
+
+###
+PUT http://localhost:3000/api/parties/682a25f3c9eb58ea61175f62
+Content-Type: application/json
+{
+  "title": "Meu evento 4",
+  "author": "Marcos 4",
+  "description": "Festa 4",
+  "budget": 700,
+  "ïmage": "https://media.istockphoto.com/id/638528468/photo/judo-training-in-the-sports-hall.jpg?s=612x612&w=0&k=20&c=hUldqplIj7B-0Wfssd2EgwWAYxmnkIRdmIkB9BDR96Q=",
+  "services": [
+    {
+      "name": "Buffet 4",
+      "description": "serviço de mesa 4",
+      "price": 100,
+      "ïmage": "https://media.istockphoto.com/id/638528468/photo/judo-training-in-the-sports-hall.jpg?s=612x612&w=0&k=20&c=hUldqplIj7B-0Wfssd2EgwWAYxmnkIRdmIkB9BDR96Q="
+    }
+  ]
+}
+
+###
+DELETE http://localhost:3000/api/parties/682a255ac9eb58ea61175f5f
